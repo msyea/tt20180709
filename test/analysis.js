@@ -43,7 +43,7 @@ describe('text analysis', () => {
 const { listPrimes } = require('../utils')
 describe('utilities', () => {
   it('should return prime numbers between 1 and 12', () => {
-    const primes = listPrimes(100)
+    const primes = listPrimes(12)
     primes.should.be.Array()
     primes.should.containEql(2)
     primes.should.containEql(3)

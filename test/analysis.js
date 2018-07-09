@@ -39,3 +39,22 @@ describe('text analysis', () => {
     primes.should.not.containEql('children')
   })
 })
+
+const { listPrimes } = require('../utils')
+describe('utilities', () => {
+  it('should return prime numbers between 1 and 12', () => {
+    const primes = listPrimes(100)
+    primes.should.be.Array()
+    primes.should.containEql(2)
+    primes.should.containEql(3)
+    primes.should.containEql(5)
+    primes.should.containEql(7)
+    primes.should.containEql(11)
+    primes.should.not.containEql(1)
+    primes.should.not.containEql(4)
+    primes.should.not.containEql(6)
+    primes.should.not.containEql(8)
+    primes.should.not.containEql(10)
+    primes.should.not.containEql(12)
+  })
+})

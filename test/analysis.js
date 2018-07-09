@@ -28,5 +28,14 @@ describe('text analysis', () => {
     count.zoological.should.equal(1)
     count.gardens.should.equal(1)
   })
-  it('should identify if the occurances of a word is a prime number')
+  it('should identify if the occurances of a word is a prime number', () => {
+    // low primes: 2, 3, 5, 7, 11
+    const { primes } = concordance(input)
+    primes.should.be.Array()
+    primes.should.containEql('they')
+    primes.should.containEql('to')
+    primes.should.containEql('and')
+    primes.should.not.containEql('railway')
+    primes.should.not.containEql('children')
+  })
 })

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha --recursive"
   },
   "author": "",
@@ -13,5 +14,10 @@
     "mocha": "^5.2.0",
     "should": "^13.2.1",
     "sinon": "^6.1.3"
+  },
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "colors": "^1.3.0",
+    "node-fetch": "^2.1.2"
   }
 }

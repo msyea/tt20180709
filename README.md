@@ -1,6 +1,6 @@
 # Technical Task
 
-Please see included my submission of the technical test. To run the output please excute the following commands:
+Please see my submission of the technical test. To run the output please excute the following commands:
 
     npm install
     npm test
